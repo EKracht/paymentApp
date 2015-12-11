@@ -3,7 +3,7 @@
 var app = angular.module('paymentApp', ['ui.router', 'ngStorage', "stripe.checkout"]);
 
 app.constant('ENV', {
-  API_URL: 'http://localhost:3000'
+  API_URL: 'http://serene-bayou-1253.herokuapp.com'
 });
 
 app.run(function($rootScope, $localStorage) {
@@ -129,6 +129,7 @@ app.service('BookService', function($http, ENV) {
 'use strict';
 
 var app = angular.module('paymentApp');
+var herokuLink = 'https://serene-bayou-1253.herokuapp.com/'
 
 app.service('UserService', function($http, ENV) {
   this.register = function(user) {

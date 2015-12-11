@@ -1,6 +1,7 @@
 'use strict';
 
 var app = angular.module('paymentApp');
+var herokuLink = 'https://serene-bayou-1253.herokuapp.com/'
 
 app.service('UserService', function($http, ENV) {
   this.register = function(user) {
